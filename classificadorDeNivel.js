@@ -1,5 +1,5 @@
 let nomeDoHeroi = "Heitor";
-let nivelDoHeroi = 1000000;
+let nivelDoHeroi = 5000;
 
 if (nivelDoHeroi <=1000){
     nivelDoHeroi = "Ferro";
@@ -19,4 +19,40 @@ if (nivelDoHeroi <=1000){
     nivelDoHeroi = "Radiante";
 };
 
-console.log(`O Herói de nome ${nomeDoHeroi} está no nível de ${nivelDoHeroi}.`)
+console.log(`O Herói de nome ${nomeDoHeroi} está no nível de ${nivelDoHeroi}.`);
+
+//adicionando estrutura switch
+
+let heroName = "Arthur";
+let heroLevel = 8000;
+let heroRank;
+
+switch(true) {
+    case heroLevel <= 1000:
+        heroRank = "Ferro";
+        break;
+
+    case heroLevel <= 2000:
+        heroRank = "Bronze";
+        break;
+
+    case heroLevel <= 5000:
+        heroRank = "Prata";
+        break;
+
+    case heroLevel <= 6000:
+        heroRank = "Ouro";
+        break;
+
+    case heroLevel <= 7000:
+        heroRank = "Platina";
+        break;
+
+    case heroLevel <= 8000:
+        heroRank = "Imortal";
+        break;
+    default:
+        heroRank = "Radiante";            
+}
+
+console.log(`O Herói de nome ${heroName} está no nível de ${heroRank}.`);
